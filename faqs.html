@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .accordion-item {
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .accordion-header {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-header:hover {
+            background-color: #f1f5f9;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .accordion-content.open {
+            max-height: 1000px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-6 fade-in">
+        <h1 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h1>
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">What services do you offer?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>We offer a wide range of services including web development, mobile app development, and digital marketing.</p>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">What are your business hours?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>Our business hours are Monday to Friday, 9 AM to 6 PM.</p>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">How can I contact customer support?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>You can contact our customer support via email at support@example.com or call us at (123) 456-7890.</p>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">What is your refund policy?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>We offer a 30-day money-back guarantee on all our services. If you are not satisfied, you can request a refund within 30 days of purchase.</p>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">Do you offer custom solutions?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>Yes, we offer custom solutions tailored to your specific needs. Please contact us to discuss your requirements.</p>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">How do I get started?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>To get started, simply contact us with your project details and we will provide you with a free consultation and quote.</p>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">What payment methods do you accept?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>We accept all major credit cards, PayPal, and bank transfers.</p>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">Do you offer ongoing support?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>Yes, we offer ongoing support and maintenance services to ensure your project runs smoothly.</p>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">Can I see examples of your previous work?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>Yes, you can view our portfolio on our website to see examples of our previous work.</p>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <div class="accordion-header flex justify-between items-center p-4" onclick="toggleAccordion(this)">
+                    <h2 class="text-xl font-semibold">How long does it take to complete a project?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content p-4">
+                    <p>The timeline for project completion varies depending on the scope and complexity of the project. We will provide an estimated timeline during the consultation phase.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+            content.classList.toggle('open');
+            const icon = element.querySelector('i');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+    </script>
+</body>
+</html>

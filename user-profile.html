@@ -1,0 +1,129 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   User Profile
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+   <div class="bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold mb-4">
+     User Profile
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+     <div class="flex flex-col items-center mb-6">
+      <img alt="User profile image placeholder" class="rounded-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/aDIMKqR8NDR1kJVs5esmrDhFaC1FvR3bceYHNAvxjiE.jpg" width="150"/>
+      <label class="block text-sm font-medium text-gray-700" for="profile-image">
+       Update Profile Image
+      </label>
+      <input class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100" id="profile-image" name="profile-image" type="file"/>
+     </div>
+     <div>
+      <h3 class="text-xl font-semibold mb-4">
+       User Details
+      </h3>
+      <div class="mb-4">
+       <label class="block text-sm font-medium text-gray-700">
+        Last Name
+       </label>
+       <p class="mt-1 text-gray-900">
+        Doe
+       </p>
+      </div>
+      <div class="mb-4">
+       <label class="block text-sm font-medium text-gray-700">
+        First Name
+       </label>
+       <p class="mt-1 text-gray-900">
+        John
+       </p>
+      </div>
+      <div class="mb-4">
+       <label class="block text-sm font-medium text-gray-700">
+        Email
+       </label>
+       <p class="mt-1 text-gray-900">
+        john.doe@example.com
+       </p>
+      </div>
+      <div class="mb-4">
+       <label class="block text-sm font-medium text-gray-700">
+        Phone Number
+       </label>
+       <p class="mt-1 text-gray-900">
+        +1234567890
+       </p>
+      </div>
+      <div class="mb-4">
+       <label class="block text-sm font-medium text-gray-700">
+        Location
+       </label>
+       <p class="mt-1 text-gray-900">
+        New York, USA
+       </p>
+      </div>
+     </div>
+    </div>
+    <form class="mt-6">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="last-name">
+        Last Name
+       </label>
+       <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="last-name" name="last-name" type="text"/>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="first-name">
+        First Name
+       </label>
+       <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="first-name" name="first-name" type="text"/>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="email">
+        Email
+       </label>
+       <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="email" name="email" type="email"/>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="phone">
+        Phone Number
+       </label>
+       <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="phone" name="phone" type="tel"/>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-gray-700" for="location">
+        Location
+       </label>
+       <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="location" name="location" type="text"/>
+      </div>
+      <div class="col-span-1 md:col-span-2">
+       <label class="block text-sm font-medium text-gray-700" for="map">
+        Select Location on Map
+       </label>
+       <div class="mt-1">
+        <iframe allowfullscreen="" class="w-full h-64 border border-gray-300 rounded-md" id="map" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153167!3d-37.81627917975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d1f9c1b1a1b1!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1611811572000!5m2!1sen!2sau">
+        </iframe>
+       </div>
+      </div>
+     </div>
+     <div class="mt-6">
+      <button class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" type="submit">
+       Save Profile
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>
